@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.oyd.music.Activity.MainActivity"
+    android:background="@android:color/background_light">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tb1"
+       android:background="@android:color/background_light"
+        android:layout_alignParentEnd="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:id="@+id/textView9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageView"
+                android:alpha="0" />
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/m_my"
+                android:background="@drawable/icon_my" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageView2"
+                android:alpha="0" />
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageButton3" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageView3"
+                android:alpha="0" />
+
+            <ImageButton
+                android:layout_height="80dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageButton2"
+                android:layout_width="80dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="20dp" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                app:srcCompat="@color/colorAccent"
+                android:id="@+id/imageView4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageView33"
+                android:alpha="0" />
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageButton433" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageView233"
+                android:alpha="0" />
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageButton333" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageView333"
+                android:alpha="0" />
+
+            <ImageButton
+                android:layout_height="80dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageButton233"
+                android:layout_width="80dp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/background_light"
+        android:layout_below="@+id/tb1"
+        android:id="@+id/sv1"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentStart="false">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:id="@+id/pic"
+            android:layout_width="60dp"
+            android:background="@drawable/timg" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:text="歌名"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/song"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                 />
+
+            <TextView
+                android:text="作者"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/songer"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/darker_gray"
+                android:textAllCaps="false"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:id="@+id/up"
+            android:background="@drawable/icon_upsong"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:id="@+id/play"
+            android:background="@drawable/icon_play"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:id="@+id/next"
+            android:background="@drawable/icon_nextsong"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/timg">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorAccent"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/p_back"
+            android:background="@drawable/icon_back" />
+
+        <TextView
+            android:text="歌曲名字"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:id="@+id/p_song"
+            android:textSize="24sp"
+            android:selectAllOnFocus="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@android:color/black"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="作者名字"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/p_songer"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="18sp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@android:color/background_dark"
+        android:maxLines="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp">
+
+        <TextView
+            android:text="00.00"
+            android:layout_height="20dp"
+            android:id="@+id/p_contentTime"
+            android:layout_width="40dp"
+            android:textColor="@android:color/background_dark" />
+
+        <SeekBar
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="0"
+            android:id="@+id/p_seekbar"
+            android:layout_weight="1"
+            style="@style/Base.Widget.AppCompat.SeekBar" />
+
+        <TextView
+            android:text="05.00"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/p_allTime"
+            android:textColor="@android:color/background_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/p_up"
+            android:background="@drawable/icon_play_up"
+            android:layout_marginStart="60dp" />
+
+        <Button
+            android:id="@+id/p_play"
+            android:background="@drawable/icon_play_play"
+            android:layout_marginStart="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/p_next"
+            android:background="@drawable/icon_play_next"
+            android:layout_marginStart="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/p_love"
+            android:background="@drawable/icon_love"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_marginStart="50dp" />
+
+        <Button
+            android:layout_height="40dp"
+            android:id="@+id/p_pattern"
+            android:background="@drawable/icon_order"
+            android:layout_width="40dp"
+            android:layout_marginStart="30dp" />
+
+        <Button
+            android:layout_height="40dp"
+            android:id="@+id/p_download"
+            android:background="@drawable/icon_download"
+            android:layout_width="40dp"
+            android:layout_marginStart="30dp" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/p_songlist"
+            android:background="@drawable/icon_songlist"
+            android:layout_marginStart="30dp" />
+    </LinearLayout>
+
+</LinearLayout>
